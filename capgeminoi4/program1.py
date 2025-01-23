@@ -43,4 +43,35 @@
 # b=4
 # c=5
 # print(result(a,b,c))
-
+import math
+def absoulte(a,b):
+    return abs(a-b)
+def cosine(c):
+    return math.cos(math.radians(c))
+def sine(c):
+    return math.sin(math.radians(c))
+def tangent(c):
+    return math.tan(math.radians(c))
+def eluer():
+    return math.e
+def logrithmic(d):
+    return math.log10(d)
+def power(b,a):
+    return math.pow(b,a)
+def pivalue():
+    return math.pi
+def sqrtu(a):
+    return math.sqrt(a)
+a=1
+b=2
+c=90
+d=10
+print(absoulte(a,b))
+print(cosine(c))
+print(sine(c))
+print(tangent(c))
+print(eluer())
+print(logrithmic(d))
+print(power(b,a))
+print(pivalue())
+print(sqrtu(a))
