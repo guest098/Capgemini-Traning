@@ -103,3 +103,15 @@
 # a=int(input())
 # b=int(input())
 # print(rectangle(a,b))
+def count_digits(text):
+    count=[0]*10
+    for ch in text:
+        if ch.isdigit():
+            count[int(ch)]+=1
+    return count
+def display(counts):
+    for digit,count in enumerate(counts):
+        print(f'{digit}:{count}')
+text="12=34 1119" 
+counts=count_digits(text)  
+display(counts)
