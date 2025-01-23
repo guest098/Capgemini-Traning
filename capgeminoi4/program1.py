@@ -62,10 +62,19 @@ def pivalue():
     return math.pi
 def sqrtu(a):
     return math.sqrt(a)
+def ceilnumber(e):
+    return math.ceil(e)
+def floornumber(e):
+    return math.floor(e)
+def factorial(d):
+    return math.factorial(d)
+def gcd(a,b):
+    return math.gcd(a,b)
 a=1
 b=2
 c=90
 d=10
+e=4.8
 print(absoulte(a,b))
 print(cosine(c))
 print(sine(c))
@@ -75,3 +84,7 @@ print(logrithmic(d))
 print(power(b,a))
 print(pivalue())
 print(sqrtu(a))
+print(ceilnumber(e))
+print(floornumber(e))
+print(factorial(d))
+print(gcd(a,b))
