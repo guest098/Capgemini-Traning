@@ -12,7 +12,7 @@
 # print(f'My name is {Name}, and i am living in {Address} and my emailid is {Email} and my Number is {Number}')
 
 def sum(a,b):
-    return a-b
+    return a+b
 def multiply(a,b):
     return a*b
 def divide(a,b):
