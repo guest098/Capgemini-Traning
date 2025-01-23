@@ -43,52 +43,63 @@
 # b=4
 # c=5
 # print(result(a,b,c))
-import math
-def absoulte(a,b):
-    return abs(a-b)
-def cosine(c):
-    return math.cos(math.radians(c))
-def sine(c):
-    return math.sin(math.radians(c))
-def tangent(c):
-    return math.tan(math.radians(c))
-def eluer():
-    return math.e
-def logrithmic(d):
-    return math.log10(d)
-def power(b,a):
-    return math.pow(b,a)
-def pivalue():
-    return math.pi
-def sqrtu(a):
-    return math.sqrt(a)
-def ceilnumber(e):
-    return math.ceil(e)
-def floornumber(e):
-    return math.floor(e)
-def factorial(d):
-    return math.factorial(d)
-def gcd(a,b):
-    return math.gcd(a,b)
-def abs1(f):
-    return abs(f)
-a=1
-b=2
-c=90
-d=10
-e=4.8
-f=-1
-print(absoulte(a,b))
-print(cosine(c))
-print(sine(c))
-print(tangent(c))
-print(eluer())
-print(logrithmic(d))
-print(power(b,a))
-print(pivalue())
-print(sqrtu(a))
-print(ceilnumber(e))
-print(floornumber(e))
-print(factorial(d))
-print(gcd(a,b))
-print(abs1(f))
+# import math
+# def absoulte(a,b):
+#     return abs(a-b)
+# def cosine(c):
+#     return math.cos(math.radians(c))
+# def sine(c):
+#     return math.sin(math.radians(c))
+# def tangent(c):
+#     return math.tan(math.radians(c))
+# def eluer():
+#     return math.e
+# def logrithmic(d):
+#     return math.log10(d)
+# def power(b,a):
+#     return math.pow(b,a)
+# def pivalue():
+#     return math.pi
+# def sqrtu(a):
+#     return math.sqrt(a)
+# def ceilnumber(e):
+#     return math.ceil(e)
+# def floornumber(e):
+#     return math.floor(e)
+# def factorial(d):
+#     return math.factorial(d)
+# def gcd(a,b):
+#     return math.gcd(a,b)
+# def abs1(f):
+#     return abs(f)
+# a=1
+# b=2
+# c=90
+# d=10
+# e=4.8
+# f=-1
+# print(absoulte(a,b))
+# print(cosine(c))
+# print(sine(c))
+# print(tangent(c))
+# print(eluer())
+# print(logrithmic(d))
+# print(power(b,a))
+# print(pivalue())
+# print(sqrtu(a))
+# print(ceilnumber(e))
+# print(floornumber(e))
+# print(factorial(d))
+# print(gcd(a,b))
+# print(abs1(f))
+#list 1:
+# counter=["abc","efg"]
+# print(counter[1])
+# print(counter)
+# print(counter[0])
+# #area of rectangle:
+# def rectangle(a,b):
+#     return a*b
+# a=int(input())
+# b=int(input())
+# print(rectangle(a,b))
