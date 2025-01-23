@@ -70,11 +70,14 @@ def factorial(d):
     return math.factorial(d)
 def gcd(a,b):
     return math.gcd(a,b)
+def abs1(f):
+    return abs(f)
 a=1
 b=2
 c=90
 d=10
 e=4.8
+f=-1
 print(absoulte(a,b))
 print(cosine(c))
 print(sine(c))
@@ -88,3 +91,4 @@ print(ceilnumber(e))
 print(floornumber(e))
 print(factorial(d))
 print(gcd(a,b))
+print(abs1(f))
