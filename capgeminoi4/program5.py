@@ -139,19 +139,6 @@
 # print(square.area())
 # print(circle.area()) 
 from datetime import date
-class Customer:
-    def __init__(self, customer_id,first_name,last_name,phone,email,street,city,state,zip_code):
-        self.customer_id=customer_id
-        self.first_name=first_name
-        self.last_name=last_name
-        self.phone=phone
-        self.email=email
-        self.street=street
-        self.city=city
-        self.state=state
-        self.zip_code=zip_code
-    def get_fullname(self):
-        return f'{self.first_name} {self.last_name}'
 class Order:
     def __init__(self,order_id,order_status,order_date,required_date,shipped_date,store_id,staff_id):
         self.order_id=order_id
@@ -166,36 +153,3 @@ class Order:
         self.items.append(item)
     def get_total_price(self):
         return sum(item.get_total() for item in self.items)
-class Order_item:
-    def __init__(self,order_id,product_id,quantity,list_price,discount):
-        self.order_id=order_id
-        self.product_id=product_id
-        self.quantity=quantity
-        self.list_price=list_price
-        self.discount=discount
-    def get_total(self):
-        return self.quantity*self.list_price*(1-self.discount/100)
-class Transaction:
-    def __init__(self,transaction_id,customer,order):
-        self.transaction_id=transaction_id
-        self.customer=customer
-        self.order=order
-    def get_transaction_details(self):
-        return {
-            "Transaction ID":self.transaction_id,
-            "Customer":self.customer.get_fullname(),
-            "Order ID":self.order.order_id,
-            "Total Amount":f"${self.order.get_total_price():.2f}",
-            "Order Items":[
-                {"Product ID":item.product_id,"Quantity":item.quantity,"Price":item.get_total()}
-                for item in self.order.items
-            ]
-        }
-customer1=Customer(101,"shanmuk","reddy",9676148598,"reddyshanmuka67@gmail.com","Hal Colony road no6 gajularamaram","Hyderabad","Telangana", 500055)
-order=Order(101,1,date.today(),date.today(),None,10,5)
-order_item1=Order_item(101,201,2,500,10)
-order.add_item(order_item1)
-transaction1=Transaction(5001,customer1,order)
-details=transaction1.get_transaction_details()
-for key,value in details.items():
-    print(f"{key}: {value}")
