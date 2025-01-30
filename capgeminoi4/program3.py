@@ -67,44 +67,69 @@
 #     min,max=prime_numbers[0],prime_numbers[-1]
 #     return prime_numbers,min,max
 
-def get_input():
-    n=int(input('Enter the number of elements:'))
-    listA=[]
-    for i in range(n):
-        listA.append(input('Enter the element: '))
-    return listA
-def palindrome_or_not(n):
-    if str(n)==str(n)[::-1]:
-        return True
-    else:
-        return False
-def palindrome_inlist():
-    listb="madam"
-    return palindrome_or_not(listb)
-def palindrome_using_for_loop(ListA):
-    for i in ListA:
-        if palindrome_or_not(i):
-            print(i,'is a palindrome')
-        else:
-            print(i,'is not a palindrome')
-# def space_elimination_in_array(ListA):
-#     ListB=[]
+# def get_input():
+#     n=int(input('Enter the number of elements:'))
+#     listA=[]
+#     for i in range(n):
+#         listA.append(input('Enter the element: '))
+#     return listA
+# def palindrome_or_not(n):
+#     if str(n)==str(n)[::-1]:
+#         return True
+#     else:
+#         return False
+# def palindrome_inlist():
+#     listb="madam"
+#     return palindrome_or_not(listb)
+# def palindrome_using_for_loop(ListA):
 #     for i in ListA:
-#         ListB.append(i.replace(' ',''))
-#     return ListB
-def space_elimination_in_array_without_inbuilit_functions(s):
-    i=0
-    ListA=list(s)
-    while i<len(ListA):
-        if ListA[i]==' ' and ListA[i+1]==' ':
-            ListA.pop(i)
-        else:
-            i+=1
-    return palindrome_or_not(''.join(ListA))
-def main():
-    listA=get_input()
-    s=input('Enter the input')
-    palindrome_using_for_loop(listA)
-    print(palindrome_inlist())
-    print(space_elimination_in_array_without_inbuilit_functions(s))
-main()
+#         if palindrome_or_not(i):
+#             print(i,'is a palindrome')
+#         else:
+#             print(i,'is not a palindrome')
+# # def space_elimination_in_array(ListA):
+# #     ListB=[]
+# #     for i in ListA:
+# #         ListB.append(i.replace(' ',''))
+# #     return ListB
+# def space_elimination_in_array_without_inbuilit_functions(s):
+#     i=0
+#     ListA=list(s)
+#     while i<len(ListA):
+#         if ListA[i]==' ' and ListA[i+1]==' ':
+#             ListA.pop(i)
+#         else:
+#             i+=1
+#     return palindrome_or_not(''.join(ListA))
+# def main():
+#     listA=get_input()
+#     s=input('Enter the input')
+#     palindrome_using_for_loop(listA)
+#     print(palindrome_inlist())
+#     print(space_elimination_in_array_without_inbuilit_functions(s))
+# main()
+# def get_input():
+#     dictionary={"a":1}
+#     return dictionary
+# def get_input1():
+#     dictionary={"ham":1,"eggs":2}
+#     return dictionary
+# def get_input3():
+#     dict={}
+#     n=int(input('Enter the how many key value pairs:'))
+#     for i in range(n):
+#         key=input('Enter the key:')
+#         value=input('Enter the value')
+#         dict[key]=value
+#     return dict
+# # def get_input4():
+    
+# def main():
+#     dictionary=get_input()
+#     dictionary1=get_input1()
+#     dictionary2=get_input3()
+#     print(dictionary)
+#     print(dictionary1)
+#     print(dictionary2)
+# main()
+
